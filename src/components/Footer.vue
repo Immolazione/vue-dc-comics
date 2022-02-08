@@ -2,11 +2,8 @@
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  components: {
-  }
+    name: 'Footer'
 }
 </script>
 

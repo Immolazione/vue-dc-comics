@@ -2,13 +2,11 @@
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  components: {
-  }
+  name: 'Header',
 }
 </script>
+
 
 <style>
 </style>
