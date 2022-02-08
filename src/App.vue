@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-size">
     <Header />
     <Main />
     <Footer />
@@ -22,7 +22,20 @@
 </script>
 
 <style>
-.container {
-  width: 1200px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .page-size {
+    height: 100vh;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+    .black-space {
+    height: 2rem;
+    background-color: #000;
+  }
 </style>
