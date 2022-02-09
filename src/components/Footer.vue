@@ -47,6 +47,8 @@ export default {
 #footer-links {
     background-image: url('../assets/img/footer-bg.jpg');
     height: 30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer-cols {
