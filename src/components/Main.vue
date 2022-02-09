@@ -8,25 +8,9 @@
     <section id="services-section">
         <div class="container">
             <div class="services">
-                <div class="service">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-                    <h1>DIGITAL COMICS</h1>
-                </div>
-                <div class="service">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-                    <h1>DIGITAL COMICS</h1>
-                </div>
-                <div class="service">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-                    <h1>DIGITAL COMICS</h1>
-                </div>
-                <div class="service">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-                    <h1>DIGITAL COMICS</h1>
-                </div>
-                <div class="service">
-                    <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital Comics">
-                    <h1>DIGITAL COMICS</h1>
+                <div class="service" v-for="(service, index) in services" :key="index">
+                    <img :src="service.src" :alt="service.text">
+                    <h1>{{ service.text }}</h1>
                 </div>
             </div>
         </div>
@@ -34,9 +18,20 @@
 </main>
 </template>
 
-<script>
+<script scoped>
 export default {
-    name: 'Main'
+    name: 'Main',
+    data(){
+        return {
+            services: [
+                {src: '../assets/img/buy-comics-digital-comics.png', url: '#', text: 'DIGITAL COMICS'},
+                {src: '../assets/img/buy-comics-merchandise.png', url: '#', text: 'DC MERCHANDISE'},
+                {src: '../assets/img/buy-comics-shop-locator.png', url: '#', text: 'SUBSCRIPTION'},
+                {src: '../assets/img/buy-comics-shop-locator.png', url: '#', text: 'COMIC SHOP LOCATOR'},
+                {src: '../assets/img/buy-dc-power-visa-svg.png', url: '#', text: 'DC POWER VISA'},
+            ],
+        }
+    }
 }
 </script>
 
