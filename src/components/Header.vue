@@ -51,5 +51,6 @@
   ul li a {
     color: #000;
     text-decoration: none;
+    font-size: 0.8rem;
   }
 </style>
