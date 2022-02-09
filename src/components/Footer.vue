@@ -4,15 +4,9 @@
         <div class="container">
             <div class="footer-cols">
                 <div class="footer-lists">
-                    <h2>DC COMICS</h2>
+                    <h2>{{  }}</h2>
                     <ul>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Comics</a></li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">News</a></li>
+                        <li v-for="" :key=""><a href=""></a></li>
                     </ul>
                 </div>
             <img src="../assets/img/dc-logo-bg.png" alt="DC Logo">
@@ -39,7 +33,45 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    data(){
+        return{
+            
+            dcComics: [
+                {url: '#', text: 'Characters'},
+                {url: '#', text: 'Comics'},
+                {url: '#', text: 'Movies'},
+                {url: '#', text: 'TV'},
+                {url: '#', text: 'Games'},
+                {url: '#', text: 'Videos'},
+                {url: '#', text: 'News'},
+            ],
+            shop: [
+                {url: '#', text: 'Shop DC'},
+                {url: '#', text: 'Shop DC Collectibles'},
+            ],
+            dc: [
+                {url: '#', text: 'Term Of Use'},
+                {url: '#', text: 'Privacy Policy (New)'},
+                {url: '#', text: 'Ad Choices'},
+                {url: '#', text: 'Advertising'},
+                {url: '#', text: 'Jobs'},
+                {url: '#', text: 'Subscriptions'},
+                {url: '#', text: 'Talent Workshops'},
+                {url: '#', text: 'CPSC Certificates'},
+                {url: '#', text: 'Ratings'},
+                {url: '#', text: 'Shop Help'},
+                {url: '#', text: 'Contact Us'},
+            ],
+            sites: [
+                {url: '#', text: 'DC'},
+                {url: '#', text: 'MAD Magazine'},
+                {url: '#', text: 'DC Kids'},
+                {url: '#', text: 'DC Universe'},
+                {url: '#', text: 'DC Power Visa'},
+            ],
+        }
+    }
 }
 </script>
 

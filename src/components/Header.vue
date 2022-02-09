@@ -5,16 +5,9 @@
         <img src="../assets/img/dc-logo.png" alt="Logo DC">
         <nav>
           <ul>
-            <li><a href="#">CHARACTERS</a></li>
-            <li><a href="#">COMICS</a></li>
-            <li><a href="#">MOVIES</a></li>
-            <li><a href="#">TV</a></li>
-            <li><a href="#">GAMES</a></li>
-            <li><a href="#">COLLECTIBLES</a></li>
-            <li><a href="#">VIDEOS</a></li>
-            <li><a href="#">FANS</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li v-for="(link, index) in navbar" :key="index"><a href="link.url">
+              {{ link.text }}
+              </a></li>
           </ul>
         </nav>
       </div>
@@ -25,6 +18,22 @@
 <script>
   export default {
     name: 'Header',
+    data() {
+      return {
+        navbar: [
+          {url: '#', text: 'CHARACTERS', active: 'false'},
+          {url: '#', text: 'COMICS', active: 'false'},
+          {url: '#', text: 'MOVIES', active: 'false'},
+          {url: '#', text: 'TV', active: 'false'},
+          {url: '#', text: 'GAMES', active: 'false'},
+          {url: '#', text: 'COLLECTIBLES', active: 'false'},
+          {url: '#', text: 'VIDEOS', active: 'false'},
+          {url: '#', text: 'FANS', active: 'false'},
+          {url: '#', text: 'NEWS', active: 'false'},
+          {url: '#', text: 'SHOP', active: 'false'}
+        ],
+      }
+    }
   }
 </script>
 
