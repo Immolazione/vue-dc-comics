@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header>
     <div class="container">
       <div id="header-navbar">
         <img src="../assets/img/dc-logo.png" alt="Logo DC">
@@ -19,7 +19,7 @@
         </nav>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -29,7 +29,7 @@
 </script>
 
 
-<style>
+<style scoped>
   #header-navbar{
     display: flex;
     justify-content: space-between;

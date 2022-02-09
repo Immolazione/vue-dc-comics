@@ -1,5 +1,5 @@
 <template>
-<div>
+<main>
     <section id="content">
         <div class="container">
             <h1>Content goes here</h1>
@@ -31,7 +31,7 @@
             </div>
         </div>
     </section>
-</div>
+</main>
 </template>
 
 <script>
@@ -40,7 +40,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #content {
     background-color: #000;
     height: 8rem;
@@ -74,6 +74,6 @@ export default {
 
 .container > h1 {
     color: #fff;
-    line-height: 10rem;
+    line-height: 8rem;
 }
 </style>
