@@ -4,9 +4,9 @@
         <div class="container">
             <div class="footer-cols">
                 <div class="footer-lists">
-                    <h2>{{  }}</h2>
+                    <h2></h2>
                     <ul>
-                        <li v-for="" :key=""><a href=""></a></li>
+                        <li><a href=""></a></li>
                     </ul>
                 </div>
             <img src="../assets/img/dc-logo-bg.png" alt="DC Logo">
@@ -36,7 +36,7 @@ export default {
     name: 'Footer',
     data(){
         return{
-            
+
             dcComics: [
                 {url: '#', text: 'Characters'},
                 {url: '#', text: 'Comics'},
