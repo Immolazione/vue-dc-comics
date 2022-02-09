@@ -34,8 +34,4 @@
     width: 1200px;
     margin: 0 auto;
   }
-    .black-space {
-    height: 2rem;
-    background-color: #000;
-  }
 </style>

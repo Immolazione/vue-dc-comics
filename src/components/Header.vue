@@ -1,9 +1,7 @@
 <template>
   <div>
-    <div class="black-space">
-    </div>
     <div class="container">
-      <div class="navbar">
+      <div id="header-navbar">
         <img src="../assets/img/dc-logo.png" alt="Logo DC">
         <nav>
           <ul>
@@ -32,13 +30,13 @@
 
 
 <style>
-  .navbar{
+  #header-navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8rem;
   }
-  .navbar img {
+  #header-navbar img {
     width: 5rem;
   }
   ul {
