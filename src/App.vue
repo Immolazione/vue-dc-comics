@@ -1,5 +1,5 @@
 <template>
-  <div class="page-size">
+  <div>
     <Header />
     <Main />
     <Footer />
@@ -26,9 +26,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  .page-size {
-    height: 100vh;
   }
   .container {
     width: 1200px;

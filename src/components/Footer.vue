@@ -6,43 +6,13 @@
                 <div class="footer-lists">
                     <h2>DC COMICS</h2>
                     <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
-                    </ul>
-                    <h2>SHOP</h2>
-                    <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
-                    </ul>
-                    <h2>DC</h2>
-                    <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
-                    </ul>
-                    <h2>SITES</h2>
-                    <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
+                        <li><a href="#">Characters</a></li>
+                        <li><a href="#">Comics</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">News</a></li>
                     </ul>
                 </div>
             <img src="../assets/img/dc-logo-bg.png" alt="DC Logo">
@@ -51,8 +21,17 @@
     </section>
     <section id="sign-and-follow">
         <div class="container">
-            <div class="sign-up"></div>
-            <div class="socials"></div>
+            <div id="sign-and-follow-cols">
+                <button type="button" class="sign-up">SIGN-UP NOW!</button>
+                <div class="socials">
+                    <h2>FOLLOW US</h2>
+                    <img src="../assets/img/footer-facebook.png" alt="Follow">
+                    <img src="../assets/img/footer-twitter.png" alt="Follow">
+                    <img src="../assets/img/footer-youtube.png" alt="Follow">
+                    <img src="../assets/img/footer-pinterest.png" alt="Follow">
+                    <img src="../assets/img/footer-periscope.png" alt="Follow">
+                </div>
+            </div>
         </div>
     </section>
 </footer>
@@ -90,9 +69,43 @@ export default {
 }
 .footer-lists ul {
     list-style-type: none;
+}
+.footer-lists ul li a {
+    text-decoration: none;
     color: grey;
 }
 
+#sign-and-follow {
+    height: 5rem;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
 
+#sign-and-follow .sign-up {
+    background-color: #303030;
+    color: white;
+    border: 2px solid #0282F9;
+    padding: 0.8rem;
+}
 
+#sign-and-follow-cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sign-and-follow-cols .socials {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+#sign-and-follow-cols .socials > * {
+    margin-left: 1rem;
+}
+#sign-and-follow-cols .socials h2 {
+    color: #0282F9;
+}
 </style>
