@@ -88,7 +88,9 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/scss/_vars.scss";
+
 #footer-links {
     background-image: url('../assets/img/footer-bg.jpg');
     height: 30rem;
@@ -99,11 +101,10 @@ export default {
 .footer-cols {
     display: flex;
     justify-content: space-between;
-}
-
-.footer-cols img {
+    img {
     position: relative;
     bottom: 2rem;
+    }
 }
 
 .footer-lists {
@@ -113,13 +114,13 @@ export default {
     color: white;
     max-height: 25rem;
     margin-top: 5rem;
-}
-.footer-lists ul {
-    list-style-type: none;
-}
-.footer-lists ul li a {
-    text-decoration: none;
-    color: grey;
+    ul {
+        list-style-type: none;
+        li a {
+        text-decoration: none;
+        color: grey;
+        }
+    }
 }
 
 #sign-and-follow {
@@ -129,30 +130,28 @@ export default {
     align-items: center;
     position: relative;
     z-index: 1;
-}
-
-#sign-and-follow .sign-up {
+    .sign-up {
     background-color: #303030;
     color: white;
-    border: 2px solid #0282F9;
+    border: 2px solid $main-color;
     padding: 0.8rem;
+    }
 }
 
 #sign-and-follow-cols {
     display: flex;
     justify-content: space-between;
-}
-
-#sign-and-follow-cols .socials {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-    align-items: center;
-}
-#sign-and-follow-cols .socials > * {
-    margin-left: 1rem;
-}
-#sign-and-follow-cols .socials h2 {
-    color: #0282F9;
+        .socials {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        align-items: center;
+        * {
+            margin-left: 1rem;
+        }
+        h2 {
+            color: #0282F9;
+        }
+    }
 }
 </style>

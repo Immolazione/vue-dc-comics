@@ -38,26 +38,26 @@
 </script>
 
 
-<style scoped>
-  #header-navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8rem;
-  }
-  #header-navbar img {
+<style lang="scss" scoped>
+#header-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  img {
     width: 5rem;
   }
-  ul {
-    display: flex;
-    list-style-type: none;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  li {
+    padding: 0 0.8rem;
+    a {
+      color: #000;
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
   }
-  ul li {
-    padding: 0 0.8rem
-  }
-  ul li a {
-    color: #000;
-    text-decoration: none;
-    font-size: 0.8rem;
-  }
+}
 </style>

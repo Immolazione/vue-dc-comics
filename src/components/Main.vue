@@ -108,7 +108,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../assets/scss/_vars.scss";
 #jumbotron {
     background-image: url(../assets/img/jumbotron.jpg);
     height: 25rem;
@@ -116,7 +117,7 @@ export default {
 #current-series{
     color: #fff;
     padding: 1rem;
-    background-color: #0282F9;
+    background-color: $main-color;
     display: inline-block;
     position: relative;
     bottom: 1.5rem;
@@ -128,35 +129,35 @@ export default {
 }
 .card{
     margin: 0 2rem;
-}
-.card img{
-    object-fit: cover;
-    object-position: top;
-    height: 10rem;
-    width: 10rem;
-}
-.card h4{
-    color: #fff;
-    text-transform: uppercase;
-    max-width: 10rem;
-    font-size: 0.8rem;
+    img{
+        object-fit: cover;
+        object-position: top;
+        height: 10rem;
+        width: 10rem;
+    }
+    h4{
+        color: #fff;
+        text-transform: uppercase;
+        max-width: 10rem;
+        font-size: 0.8rem;
+    }
 }
 .load-more{
     display: flex;
     justify-content: center;
-}
-.load-more button {
-    background-color: #0282F9;
-    border: 0;
-    color: #fff;
-    padding: 1rem 2rem;
-    margin: 2rem;
+    button {
+        background-color: $main-color;
+        border: 0;
+        color: #fff;
+        padding: 1rem 2rem;
+        margin: 2rem;
+    }
 }
 #content {
     background-color: #000;
 }
 #services-section {
-    background-color: #0282F9;
+    background-color: $main-color;
 }
 .services {
     height: 10rem;
@@ -170,15 +171,13 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.service img {
-    margin-right: 1rem;
-    height: 3rem;
-}
-
-.service h1 {
-    font-size: 1rem;
+    img {
+        margin-right: 1rem;
+        height: 3rem;
+    }
+    h1 {
+        font-size: 1rem;
+    }
 }
 
 .container > h1 {

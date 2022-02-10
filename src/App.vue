@@ -23,14 +23,4 @@
 
 <style lang="scss">
 @import'./assets/scss/style.scss';
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $segoe;
-  }
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
 </style>
