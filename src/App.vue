@@ -21,13 +21,13 @@
   }
 </script>
 
-<style>
-@import'_font.scss';
+<style lang="scss">
+@import'./assets/scss/style.scss';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-style: '$segoe';
+    font-family: $segoe;
   }
   .container {
     width: 1200px;
