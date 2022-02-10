@@ -3,13 +3,13 @@
     <section id="footer-links">
         <div class="container">
             <div class="footer-cols">
-                <div class="footer-lists">
-                    <h2></h2>
+                <div class="footer-lists" v-for="(link, index) in footerLinks" :key="index">
+                    <h2>{{ link.title }}</h2>
                     <ul>
-                        <li><a href=""></a></li>
+                        <li><a href="">{{  }}</a></li>
                     </ul>
                 </div>
-            <img src="../assets/img/dc-logo-bg.png" alt="DC Logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="DC Logo">
             </div>
         </div>
     </section>
@@ -36,40 +36,53 @@ export default {
     name: 'Footer',
     data(){
         return{
-
-            dcComics: [
-                {url: '#', text: 'Characters'},
-                {url: '#', text: 'Comics'},
-                {url: '#', text: 'Movies'},
-                {url: '#', text: 'TV'},
-                {url: '#', text: 'Games'},
-                {url: '#', text: 'Videos'},
-                {url: '#', text: 'News'},
-            ],
-            shop: [
-                {url: '#', text: 'Shop DC'},
-                {url: '#', text: 'Shop DC Collectibles'},
-            ],
-            dc: [
-                {url: '#', text: 'Term Of Use'},
-                {url: '#', text: 'Privacy Policy (New)'},
-                {url: '#', text: 'Ad Choices'},
-                {url: '#', text: 'Advertising'},
-                {url: '#', text: 'Jobs'},
-                {url: '#', text: 'Subscriptions'},
-                {url: '#', text: 'Talent Workshops'},
-                {url: '#', text: 'CPSC Certificates'},
-                {url: '#', text: 'Ratings'},
-                {url: '#', text: 'Shop Help'},
-                {url: '#', text: 'Contact Us'},
-            ],
-            sites: [
-                {url: '#', text: 'DC'},
-                {url: '#', text: 'MAD Magazine'},
-                {url: '#', text: 'DC Kids'},
-                {url: '#', text: 'DC Universe'},
-                {url: '#', text: 'DC Power Visa'},
-            ],
+            footerLinks: [
+                {
+                    title: 'DC COMICS',
+                    text: [
+                    {url: '#', text: 'Characters'},
+                    {url: '#', text: 'Comics'},
+                    {url: '#', text: 'Movies'},
+                    {url: '#', text: 'TV'},
+                    {url: '#', text: 'Games'},
+                    {url: '#', text: 'Videos'},
+                    {url: '#', text: 'News'},
+                    ]
+                },
+                {
+                    title: 'SHOP',
+                    text: [
+                        {url: '#', text: 'Shop DC'},
+                        {url: '#', text: 'Shop DC Collectibles'},
+                    ]
+                },
+                {
+                    title: 'DC',
+                    text: [
+                        {url: '#', text: 'Term Of Use'},
+                        {url: '#', text: 'Privacy Policy (New)'},
+                        {url: '#', text: 'Ad Choices'},
+                        {url: '#', text: 'Advertising'},
+                        {url: '#', text: 'Jobs'},
+                        {url: '#', text: 'Subscriptions'},
+                        {url: '#', text: 'Talent Workshops'},
+                        {url: '#', text: 'CPSC Certificates'},
+                        {url: '#', text: 'Ratings'},
+                        {url: '#', text: 'Shop Help'},
+                        {url: '#', text: 'Contact Us'},
+                    ],
+                },
+                {
+                    title: 'SITES',
+                    text: [
+                        {url: '#', text: 'DC'},
+                        {url: '#', text: 'MAD Magazine'},
+                        {url: '#', text: 'DC Kids'},
+                        {url: '#', text: 'DC Universe'},
+                        {url: '#', text: 'DC Power Visa'},
+                    ],
+                }
+            ]
         }
     }
 }

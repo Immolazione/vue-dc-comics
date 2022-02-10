@@ -9,7 +9,7 @@
         <div class="container">
             <div class="services">
                 <div class="service" v-for="(service, index) in services" :key="index">
-                    <img :src="service.src" :alt="service.text">
+                    <img :src="require(`../assets/img/${service.src}`)" :alt="service.text">
                     <h1>{{ service.text }}</h1>
                 </div>
             </div>
@@ -24,11 +24,11 @@ export default {
     data(){
         return {
             services: [
-                {src: '../assets/img/buy-comics-digital-comics.png', url: '#', text: 'DIGITAL COMICS'},
-                {src: '../assets/img/buy-comics-merchandise.png', url: '#', text: 'DC MERCHANDISE'},
-                {src: '../assets/img/buy-comics-shop-locator.png', url: '#', text: 'SUBSCRIPTION'},
-                {src: '../assets/img/buy-comics-shop-locator.png', url: '#', text: 'COMIC SHOP LOCATOR'},
-                {src: '../assets/img/buy-dc-power-visa-svg.png', url: '#', text: 'DC POWER VISA'},
+                {src: 'buy-comics-digital-comics.png', url: '#', text: 'DIGITAL COMICS'},
+                {src: 'buy-comics-merchandise.png', url: '#', text: 'DC MERCHANDISE'},
+                {src: 'buy-comics-subscriptions.png', url: '#', text: 'SUBSCRIPTION'},
+                {src: 'buy-comics-shop-locator.png', url: '#', text: 'COMIC SHOP LOCATOR'},
+                {src: 'buy-dc-power-visa.svg', url: '#', text: 'DC POWER VISA'},
             ],
         }
     }
