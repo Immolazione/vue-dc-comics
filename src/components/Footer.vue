@@ -6,7 +6,9 @@
                 <div class="footer-lists" v-for="(link, index) in footerLinks" :key="index">
                     <h2>{{ link.title }}</h2>
                     <ul>
-                        <li><a href="">{{  }}</a></li>
+                        <li v-for="(subtitle, i) in link.text" :key="i">
+                            <a href="subtitle.url">{{ subtitle.text }}</a>
+                        </li>
                     </ul>
                 </div>
                 <img src="../assets/img/dc-logo-bg.png" alt="DC Logo">
@@ -112,7 +114,6 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     color: white;
-    max-height: 25rem;
     margin-top: 5rem;
     ul {
         list-style-type: none;

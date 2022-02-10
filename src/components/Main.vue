@@ -8,7 +8,7 @@
             <div class="card-box">
                 <div class="card" v-for="(card, index) in cardDetails" :key="index">
                     <img :src="card.thumb" :alt="card.series">
-                    <h4>{{ card.series }}</h4>
+                    <div>{{ card.series }}</div>
                 </div>
             </div>
             <div class="load-more">
@@ -129,17 +129,18 @@ export default {
 }
 .card{
     margin: 0 2rem;
-    img{
+    img {
         object-fit: cover;
         object-position: top;
         height: 10rem;
         width: 10rem;
     }
-    h4{
+    div {
         color: #fff;
         text-transform: uppercase;
         max-width: 10rem;
         font-size: 0.8rem;
+        margin-bottom: 1rem;
     }
 }
 .load-more{
